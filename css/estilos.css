@@ -25,7 +25,8 @@
   }
   
   .logo {
-    height: 40px;
+    width: 20px;
+    height: 50px;
   }
   
   .nav {
@@ -44,6 +45,41 @@
   .nav span {
     color: #888;
   }
+  
+
+  /* Estilo base para los enlaces de navegación */
+nav a {
+    position: relative;                /* Necesario para el subrayado */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Línea que aparece al hacer hover o clic */
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);  /* Colores de la barra */
+    transition: width 0.3s ease;
+  }
+  
+  /* Animación en hover o focus (clic también en móviles) */
+  nav a:hover::after,
+  nav a:focus::after {
+    width: 100%;
+  }
+  
+  /* Opcional: cambia color al hacer clic */
+  nav a:active {
+    color: #4e54c8;
+  }
+  
   
   /* HERO */
   .hero {
@@ -79,40 +115,8 @@
     font-weight: bold;
   }
   
-  /* ===== MEDIA QUERY RESPONSIVA ===== */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+ 
   
-    .nav {
-      flex-direction: column;
-      gap: 5px;
-      margin-top: 10px;
-    }
-  
-    .overlay-text {
-      top: 10%;
-      font-size: 1.3em;
-    }
-  
-    .mensaje {
-      font-size: 1em;
-      padding: 30px 10px;
-    }
-  
-    .logo {
-      height: 35px;
-    }
-  
-    .nav a {
-      font-size: 1em;
-    }
-  }
-  
-
  /* Estilos globales */
 body {
     font-family: Arial, sans-serif;
@@ -131,6 +135,7 @@ body {
   
   .logo {
     width: 100px;
+    height: 50px;
   }
   
   .nav a {
@@ -239,15 +244,162 @@ body {
     height: auto;
   }
   
+ 
+  
+
+  /* Sección contacto */
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  
+  .mapa img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .informacion-contacto {
+    max-width: 400px;
+  }
+  
+  .informacion-contacto h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .informacion-contacto p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #111;
+  }
+  
+  .informacion-contacto .icono {
+    width: 35px;
+    margin-right: 10px;
+  }
+  
+  /* Barra inferior decorativa */
+  .barra-gradient {
+    height: 6px;
+    background: linear-gradient(to right, #a5b4fc, #1e3a8a); /* azul claro a azul oscuro */
+    margin: 30px 20px 10px;
+    border-radius: 3px;
+  }
+  
   /* Responsivo */
   @media (max-width: 768px) {
-    .quienes-somos {
+    .contacto {
       flex-direction: column;
       align-items: center;
     }
   
-    .bloque {
-      max-width: 90%;
+    .informacion-contacto {
+      text-align: center;
+    }
+  
+    .informacion-contacto p {
+      justify-content: center;
     }
   }
+  
+
+
+
+  @media (max-width: 480px) {
+    /* === HEADER GENERAL === */
+    header {
+      flex-direction: column;              /* Apila el logo y menú */
+      align-items: center;
+      gap: 40px;
+      padding: 20px;
+      text-align: center;
+      padding: 25px 20px;                              /* Reduce el relleno lateral */
+      margin: 20px auto;
+    }
+  
+    nav {
+      flex-direction: column;              /* Menú en columna */
+      gap: 10px;
+    }
+  
+    nav a {
+      font-size: 1.1rem;
+      padding: 5px 0;
+    }
+  
+    /* === CONTENEDORES GENERALES === */
+    .contenedor, .seccion, main, .tarjeta {
+      padding: 15px;
+      margin: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    p, a, li {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+    /* === SECCIÓN CONTACTO === */
+    .contacto {
+      flex-direction: column;              /* Apila mapa e info */
+      align-items: center;
+      gap: 25px;
+      text-align: center;
+    }
+  
+    .informacion-contacto {
+      align-items: center;
+    }
+  
+    .informacion-contacto p {
+      justify-content: center;
+      font-size: 1rem;
+    }
+  
+    .informacion-contacto .icono {
+      margin-right: 8px;
+    }
+  
+    .mapa img,
+    .mapa iframe {
+      width: 100%;
+      max-width: 90vw;
+      height: auto;
+    }
+  
+    /* === PIE / BARRA FINAL === */
+    .barra-gradient {
+      width: 80%;
+      margin: 30px auto;
+    }
+  
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  
+    /* === BOTONES O INTERACCIONES (si existen) === */
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+    }
+  }
+  
+
   
