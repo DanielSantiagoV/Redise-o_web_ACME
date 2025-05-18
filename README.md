@@ -67,7 +67,7 @@ MAQUETACION_DASVP_AIR/
 
 El proyecto está disponible en línea para ser probado desde cualquier dispositivo móvil:
 
-🔗 **[Ver Aplicación en Vivo](https://TU-USUARIO.github.io/DASVP-AIR/)**
+🔗 **[Ver Aplicación en Vivo](https://danielsantiagov.github.io/Examen_html_Css_VinascoDaniel/)**
 
 
 
@@ -178,8 +178,8 @@ Este proyecto fue un gran reto y una valiosa oportunidad para aplicar todos los 
 
 ## 🎯 Entregable Final
 
-Repositorio: [GitHub – Proyecto DASVP AIR](https://github.com/TU-USUARIO/DASVP-AIR)  
-Despliegue: [GitHub Pages – DASVP AIR](https://TU-USUARIO.github.io/DASVP-AIR/)
+Repositorio: [GitHub – Proyecto DASVP AIR](https://github.com/DanielSantiagoV/Examen_html_Css_VinascoDaniel.git)  
+Despliegue: [GitHub Pages – DASVP AIR](https://danielsantiagov.github.io/Examen_html_Css_VinascoDaniel/)
 
 ---
 
