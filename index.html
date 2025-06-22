@@ -3,38 +3,484 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acme Tech</title>
-  <link rel="stylesheet" href="css/estilos.css" />
-  <link rel="icon" href="img/image.png" type="image/png">
-
+  <meta name="description" content="Acme Tech - Conectando el mundo con las mejores tecnologías para impactar compañías vanguardistas. Soluciones de IA, ciencia de datos y SaaS innovadoras." />
+  <meta name="keywords" content="tecnología, IA, ciencia de datos, SaaS, innovación, desarrollo web, consultoría tecnológica" />
+  <meta name="author" content="Acme Tech" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Acme Tech - Innovación Tecnológica" />
+  <meta property="og:description" content="Conectando el mundo con las mejores tecnologías para impactar compañías vanguardistas" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://acmetech.com" />
+  <meta property="og:image" content="img/logo_acme.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Acme Tech - Innovación Tecnológica | Soluciones de IA y Ciencia de Datos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/logo_acme.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/logo_acme.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="img/logo_acme.png" alt="Logo Acme" class="logo" /> <!-- Logo Acme -->
-      <nav class="nav">
-        <a href="#index.html">Inicio</a>
-        <span>|</span>
-        <a href="html/servicios.html">Servicios</a>
-        <span>|</span>
-        <a href="html/quienes_somos.html">¿Quiénes somos?</a>
-        <span>|</span>
-        <a href="html/contacto.html">Contacto</a>
-      </nav>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loader">
+      <div class="loader-logo">
+        <img src="img/logo_acme.png" alt="Acme Tech" />
+      </div>
+      <div class="loader-spinner"></div>
+      <p>Cargando Acme Tech...</p>
     </div>
-  </header>
+  </div>
 
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="img/logo_acme.png" alt="Logo Acme Tech" class="logo" />
+        <span class="logo-text">Acme Tech</span>
+      </div>
+      
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="html/servicios.html" class="nav-link">Servicios</a>
+        <a href="html/quienes_somos.html" class="nav-link">¿Quiénes somos?</a>
+        <a href="html/contacto.html" class="nav-link">Contacto</a>
+        <a href="#newsletter" class="nav-link nav-cta">Newsletter</a>
+      </div>
+      
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="overlay-text">
+    <div class="hero-background">
+      <img src="img/fondo_tech.png" alt="Fondo tecnología" class="hero-image" loading="lazy" />
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="hero-particles"></div>
     </div>
-    <img src="img/fondo_tech.png" alt="Fondo tecnología" class="hero-image" />
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <i class="fas fa-rocket"></i>
+          <span>Innovación Tecnológica</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Conectando el mundo</span>
+          <span class="title-line">con las mejores</span>
+          <span class="title-line highlight">tecnologías</span>
+        </h1>
+        <p class="hero-subtitle">Para impactar compañías vanguardistas con soluciones de IA, ciencia de datos y SaaS innovadoras</p>
+        <div class="hero-buttons">
+          <a href="html/servicios.html" class="btn btn-primary">
+            <i class="fas fa-arrow-right"></i>
+            Nuestros Servicios
+          </a>
+          <a href="html/contacto.html" class="btn btn-secondary">
+            <i class="fas fa-phone"></i>
+            Contáctanos
+          </a>
+        </div>
+        <div class="hero-features">
+          <div class="hero-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>+500 Proyectos Exitosos</span>
+          </div>
+          <div class="hero-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>99% Satisfacción</span>
+          </div>
+          <div class="hero-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Soporte 24/7</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat-item" data-aos="fade-up">
+          <div class="stat-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <span class="stat-number" data-target="500">0</span>
+          <span class="stat-label">Proyectos Completados</span>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <span class="stat-number" data-target="50">0</span>
+          <span class="stat-label">Clientes Satisfechos</span>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Años de Experiencia</span>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <span class="stat-number" data-target="25">0</span>
+          <span class="stat-label">Premios Ganados</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Desliza para explorar</span>
+    </div>
   </section>
 
-  <section class="mensaje">
-    <p>
-      Conectando el mundo con las mejores tecnologías para<br />
-      impactar compañías vanguardistas.
-    </p>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-badge">
+          <i class="fas fa-star"></i>
+          <span>Nuestras Ventajas</span>
+        </div>
+        <h2>¿Por qué elegir Acme Tech?</h2>
+        <p>Innovación, calidad y resultados que transforman tu negocio con tecnología de vanguardia</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Innovación Constante</h3>
+          <p>Mantenemos la vanguardia tecnológica para ofrecer soluciones de última generación que impulsan tu negocio.</p>
+          <div class="feature-link">
+            <a href="html/servicios.html">Saber más <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Resultados Rápidos</h3>
+          <p>Implementamos soluciones eficientes que generan impacto inmediato en tu negocio y ROI medible.</p>
+          <div class="feature-link">
+            <a href="html/servicios.html">Saber más <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Soporte 24/7</h3>
+          <p>Nuestro equipo está disponible para brindarte asistencia técnica cuando la necesites, sin importar la hora.</p>
+          <div class="feature-link">
+            <a href="html/contacto.html">Contactar <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Seguridad Garantizada</h3>
+          <p>Implementamos las mejores prácticas de seguridad para proteger tus datos y sistemas críticos.</p>
+          <div class="feature-link">
+            <a href="html/servicios.html">Saber más <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Análisis Avanzado</h3>
+          <p>Utilizamos ciencia de datos y IA para proporcionar insights valiosos que optimizan tus decisiones.</p>
+          <div class="feature-link">
+            <a href="html/servicios.html">Saber más <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Todas nuestras soluciones están optimizadas para funcionar perfectamente en cualquier dispositivo.</p>
+          <div class="feature-link">
+            <a href="html/servicios.html">Saber más <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- Technologies Section -->
+  <section class="technologies">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Tecnologías que Utilizamos</h2>
+        <p>Stack tecnológico de vanguardia para soluciones robustas y escalables</p>
+      </div>
+      
+      <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="tech-item">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-node-js"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-aws"></i>
+          <span>AWS</span>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-docker"></i>
+          <span>Docker</span>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-google"></i>
+          <span>Google Cloud</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Testimonios de empresas que han transformado su negocio con Acme Tech</p>
+      </div>
+      
+      <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial-item active">
+          <div class="testimonial-content">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Acme Tech transformó completamente nuestra operación digital. Su implementación de IA nos permitió aumentar la eficiencia en un 300%."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>María González</h4>
+                <span>CEO, TechCorp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"El equipo de Acme Tech es excepcional. Su conocimiento técnico y atención al cliente superaron todas nuestras expectativas."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Carlos Rodríguez</h4>
+                <span>CTO, InnovateLab</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Gracias a Acme Tech, pudimos lanzar nuestra plataforma SaaS en tiempo récord. Los resultados han sido increíbles."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Ana Martínez</h4>
+                <span>Fundadora, StartupXYZ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-controls">
+        <button class="testimonial-btn prev" id="prev-testimonial">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="testimonial-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+        <button class="testimonial-btn next" id="next-testimonial">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter-content" data-aos="fade-up">
+        <div class="newsletter-text">
+          <h2>Mantente Actualizado</h2>
+          <p>Suscríbete a nuestro newsletter para recibir las últimas noticias sobre tecnología, IA y tendencias del mercado.</p>
+        </div>
+        <div class="newsletter-form">
+          <form id="newsletter-form" class="newsletter-form-container">
+            <div class="form-group">
+              <input type="email" id="newsletter-email" placeholder="Tu correo electrónico" required>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                Suscribirse
+              </button>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="newsletter-privacy" required>
+              <label for="newsletter-privacy">Acepto recibir comunicaciones de Acme Tech</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <div class="cta-badge">
+          <i class="fas fa-rocket"></i>
+          <span>¡Comienza Ahora!</span>
+        </div>
+        <h2>¿Listo para transformar tu empresa?</h2>
+        <p>Descubre cómo nuestras soluciones tecnológicas pueden impulsar tu negocio al siguiente nivel con IA, ciencia de datos y desarrollo SaaS.</p>
+        <div class="cta-buttons">
+          <a href="html/contacto.html" class="btn btn-primary btn-large">
+            <i class="fas fa-phone"></i>
+            Solicitar Consulta Gratuita
+          </a>
+          <a href="html/servicios.html" class="btn btn-secondary btn-large">
+            <i class="fas fa-eye"></i>
+            Ver Portafolio
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="img/logo_acme.png" alt="Logo Acme Tech" class="logo" />
+            <span>Acme Tech</span>
+          </div>
+          <p>Conectando el mundo con las mejores tecnologías para impactar compañías vanguardistas con soluciones innovadoras.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="html/servicios.html">Servicios</a></li>
+            <li><a href="html/quienes_somos.html">¿Quiénes somos?</a></li>
+            <li><a href="html/contacto.html">Contacto</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="html/servicios.html">Desarrollo Web</a></li>
+            <li><a href="html/servicios.html">Inteligencia Artificial</a></li>
+            <li><a href="html/servicios.html">Ciencia de Datos</a></li>
+            <li><a href="html/servicios.html">SaaS Solutions</a></li>
+            <li><a href="html/servicios.html">Consultoría IT</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>712 Av. Green Stone Sprintfield</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@acme.tech">info@acme.tech</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+0015558965">(+001) 555 8965</a>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+              <a href="#">@acmetech</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 Acme Tech. Todos los derechos reservados.</p>
+          <div class="footer-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Notification Container -->
+  <div class="notification-container" id="notification-container"></div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,48 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios - ACME</title>
-  <link rel="stylesheet" href="../css/estilos.css"> 
+  <meta name="description" content="Servicios de Acme Tech - IA Generativa, Ciencia de Datos y Software como Servicio" />
+  <meta name="keywords" content="servicios, IA, ciencia de datos, SaaS, tecnología" />
+  <meta name="author" content="Acme Tech" />
+  <title>Servicios - Acme Tech</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="../img/logo_acme.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="../img/logo_acme.png" alt="Logo Acme Tech" class="logo" />
+        <span class="logo-text">Acme Tech</span>
+      </div>
+      
+      <div class="nav-menu" id="nav-menu">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="servicios.html" class="nav-link active">Servicios</a>
+        <a href="quienes_somos.html" class="nav-link">¿Quiénes somos?</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </div>
+      
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Nuestros Servicios</h1>
+        <p>Tecnologías que harán trascender tu compañía</p>
+      </div>
+    </div>
+  </section>
 
-  <header class="header">
-    <img src="img/logo_acme.png" alt="Logo ACME" class="logo"> <!-- Ruta a tu logo -->
-    <nav class="nav">
-      <a href="index.html">Inicio</a>
-      <a href="../html/servicios.html" class="active">Servicios</a>
-      <a href="../html/quienes_somos.html">¿Quienes somos?</a>
-      <a href="../html/contacto.html">Contacto</a>
-    </nav>
-  </header>
+  <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <div class="services-grid">
+        <article class="service-card" data-aos="fade-up">
+          <div class="service-image">
+            <img src="../img/image copy.png" alt="IA Generativa" />
+            <div class="service-overlay">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>IA Generativa</h3>
+            <p>Utiliza el poder de la IA generativa para crear contenido digital de alta calidad que ayuden a impulsar tu compañía a través del marketing digital.</p>
+            <div class="service-features">
+              <span class="feature-tag">Contenido Digital</span>
+              <span class="feature-tag">Marketing</span>
+              <span class="feature-tag">Automatización</span>
+            </div>
+            <a href="contacto.html" class="btn btn-primary">Más Información</a>
+          </div>
+        </article>
 
-  
-  <main class="contenedor-servicios">
-    <section class="tarjetas-servicios">
+        <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-image">
+            <img src="../img/ciencia de datos.png" alt="Ciencia de Datos" />
+            <div class="service-overlay">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Ciencia de Datos</h3>
+            <p>Los datos generados en tu compañía te ayudarán a ver de una forma más clara qué pasos seguir. La ciencia de datos te ayudará a la toma de decisiones mediante proyecciones y otras herramientas.</p>
+            <div class="service-features">
+              <span class="feature-tag">Análisis</span>
+              <span class="feature-tag">Proyecciones</span>
+              <span class="feature-tag">Decisiones</span>
+            </div>
+            <a href="contacto.html" class="btn btn-primary">Más Información</a>
+          </div>
+        </article>
 
-      <article class="tarjeta">
-        <img src="../img/image copy.png" alt="IA Generativa"> <!-- Imagen correspondiente -->
-        <h2>IA GENERATIVA</h2>
-        <p>Utiliza el poder de la IA generativa para crear contenido digital de alta calidad que ayuden a impulsar tu compañía a través del marketing digital.</p>
-      </article>
+        <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-image">
+            <img src="../img/software_como_servicio.png" alt="Software como Servicio" />
+            <div class="service-overlay">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>Software como Servicio</h3>
+            <p>Poseemos una gran variedad de herramientas digitales que le ayudarán a gestionar su compañía. Apoyamos sus procesos con nuestras plataformas digitales.</p>
+            <div class="service-features">
+              <span class="feature-tag">Herramientas</span>
+              <span class="feature-tag">Gestión</span>
+              <span class="feature-tag">Plataformas</span>
+            </div>
+            <a href="contacto.html" class="btn btn-primary">Más Información</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-      <article class="tarjeta">
-        <img src="../img/ciencia de datos.png" alt="Ciencia de Datos">
-        <h2>CIENCIA DE DATOS</h2>
-        <p>Los datos generados en tu compañía te ayudarán a ver de una forma más clara qué pasos seguir. La ciencia de datos te ayudará a la toma de decisiones mediante proyecciones y otras herramientas.</p>
-      </article>
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>¿Listo para implementar estas tecnologías?</h2>
+        <p>Nuestro equipo de expertos está listo para ayudarte a transformar tu negocio con las últimas tecnologías.</p>
+        <a href="contacto.html" class="btn btn-primary btn-large">Contáctanos Ahora</a>
+      </div>
+    </div>
+  </section>
 
-      <article class="tarjeta">
-        <img src="../img/software_como_servicio.png" alt="SaaS">
-        <h2>Software como Servicio</h2>
-        <p>Poseemos una gran variedad de herramientas digitales que le ayudarán a gestionar su compañía. Apoyamos sus procesos con nuestras plataformas digitales.</p>
-      </article>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="../img/logo_acme.png" alt="Logo Acme Tech" class="logo" />
+            <span>Acme Tech</span>
+          </div>
+          <p>Conectando el mundo con las mejores tecnologías para impactar compañías vanguardistas.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="quienes_somos.html">¿Quiénes somos?</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <ul>
+            <li>712 Av. Green Stone Sprintfield</li>
+            <li>info@acme.tech</li>
+            <li>(+001) 555 8965</li>
+            <li>@acmetech</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Acme Tech. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
-    </section>
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
 
-    <h3 class="mensaje-final">Tecnologías que harán trascender tu compañía.</h3>
-  </main>
-
+  <script src="../js/main.js"></script>
 </body>
 </html>

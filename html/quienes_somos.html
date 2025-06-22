@@ -3,46 +3,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¿Quiénes somos? - ACME</title>
-  <link rel="stylesheet" href="../css/estilos.css" />
+  <meta name="description" content="Conoce más sobre Acme Tech - Nuestra misión, visión y valores" />
+  <meta name="keywords" content="acerca de, misión, visión, valores, empresa" />
+  <meta name="author" content="Acme Tech" />
+  <title>¿Quiénes somos? - Acme Tech</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="../img/logo_acme.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="../img/logo_acme.png" alt="Logo Acme Tech" class="logo" />
+        <span class="logo-text">Acme Tech</span>
+      </div>
+      
+      <div class="nav-menu" id="nav-menu">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="quienes_somos.html" class="nav-link active">¿Quiénes somos?</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </div>
+      
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Header -->
-  <header class="header">
-    <img src="../img/logo_acme.png" alt="Logo ACME" class="logo" />
-    <nav class="nav">
-      <a href="index.html">Inicio</a>
-      <a href="../html/servicios.html">Servicios</a>
-      <a href="../html/quienes_somos.html" class="active">¿Quiénes somos?</a>
-      <a href="../html/contacto.html">Contacto</a>
-    </nav>
-  </header>
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-content">
+        <h1>¿Quiénes somos?</h1>
+        <p>Conoce nuestra misión, visión y los valores que nos impulsan</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- Sección Quiénes somos -->
-  <main class="quienes-somos">
-    <section class="bloque">
-      <img src="../img/image-vision.png" alt="Misión" class="icono" />
-      <h2>Misión</h2>
-      <p>
-        Potenciar el éxito de las compañías mediante soluciones tecnológicas
-        innovadoras que transforman ideas en impacto, impulsando el crecimiento
-        acelerado de estas.
-      </p>
-    </section>
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <div class="about-grid">
+        <article class="about-card" data-aos="fade-up">
+          <div class="about-image">
+            <img src="../img/image-vision.png" alt="Misión" />
+            <div class="about-overlay">
+              <div class="about-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <h3>Misión</h3>
+            <p>Potenciar el éxito de las compañías mediante soluciones tecnológicas innovadoras que transforman ideas en impacto, impulsando el crecimiento acelerado de estas.</p>
+            <div class="about-features">
+              <span class="feature-tag">Innovación</span>
+              <span class="feature-tag">Crecimiento</span>
+              <span class="feature-tag">Impacto</span>
+            </div>
+          </div>
+        </article>
 
-    <section class="bloque">
-      <h2>Visión</h2>
-      <p>
-        Nos vemos como líderes en la vanguardia de la innovación tecnológica,
-        siendo reconocidos por nuestra dedicación a impulsar el éxito empresarial
-        y el cambio social. Aspiramos a ser la primera opción para compañías que
-        buscan soluciones tecnológicas de alto impacto, demostrando que la
-        tecnología puede ser una fuerza poderosa para el bien.
-      </p>
-      <img src="../img/image-mision.png" alt="Visión" class="icono" />
-    </section>
-  </main>
+        <article class="about-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-image">
+            <img src="../img/image-mision.png" alt="Visión" />
+            <div class="about-overlay">
+              <div class="about-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <h3>Visión</h3>
+            <p>Nos vemos como líderes en la vanguardia de la innovación tecnológica, siendo reconocidos por nuestra dedicación a impulsar el éxito empresarial y el cambio social. Aspiramos a ser la primera opción para compañías que buscan soluciones tecnológicas de alto impacto, demostrando que la tecnología puede ser una fuerza poderosa para el bien.</p>
+            <div class="about-features">
+              <span class="feature-tag">Liderazgo</span>
+              <span class="feature-tag">Vanguardia</span>
+              <span class="feature-tag">Cambio Social</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <!-- Values Section -->
+  <section class="values">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nuestros Valores</h2>
+        <p>Los principios que guían cada decisión y acción en Acme Tech</p>
+      </div>
+      
+      <div class="values-grid">
+        <div class="value-card" data-aos="fade-up">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3>Innovación Constante</h3>
+          <p>Buscamos siempre las mejores soluciones tecnológicas para nuestros clientes, manteniéndonos a la vanguardia de las últimas tendencias.</p>
+        </div>
+        
+        <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3>Excelencia en Servicio</h3>
+          <p>Nos comprometemos a brindar un servicio excepcional, superando las expectativas de nuestros clientes en cada proyecto.</p>
+        </div>
+        
+        <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h3>Confianza y Seguridad</h3>
+          <p>Construimos relaciones duraderas basadas en la confianza, la transparencia y la seguridad en todos nuestros procesos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>¿Te identificas con nuestros valores?</h2>
+        <p>Únete a nosotros en la transformación digital y juntos creemos un futuro tecnológico brillante.</p>
+        <a href="contacto.html" class="btn btn-primary btn-large">Trabaja con Nosotros</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="../img/logo_acme.png" alt="Logo Acme Tech" class="logo" />
+            <span>Acme Tech</span>
+          </div>
+          <p>Conectando el mundo con las mejores tecnologías para impactar compañías vanguardistas.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="quienes_somos.html">¿Quiénes somos?</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <ul>
+            <li>712 Av. Green Stone Sprintfield</li>
+            <li>info@acme.tech</li>
+            <li>(+001) 555 8965</li>
+            <li>@acmetech</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Acme Tech. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>
